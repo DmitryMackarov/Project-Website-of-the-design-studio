@@ -1,0 +1,298 @@
+body {
+   margin: 0;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+main {
+   padding: 0;
+   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+}
+
+p {
+   margin: 0;
+}
+
+ul {
+   margin: 0;
+}
+
+/* ---------------------HEADER----------------- */
+header {
+   width: 100%;
+   height: 83px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #131313;
+}
+
+/* ------------------DIV-container------------- */
+
+.container {
+   width: 100%;
+   max-width: 1256px;
+   /* height: 37px; */
+
+   /* background-color: #3d3a3a; */
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* -----------------/DIV-container------------- */
+/* header_span */
+.header_span {
+   width: 179.74px;
+   height: 10px;
+
+   font-family: 'Nunito Sans';
+   text-transform: uppercase;
+   font-size: 11px;
+   line-height: 15px;
+
+   color: #E3B873;
+}
+
+/* /header_span */
+
+/* nav  */
+nav {
+   width: 581.43px;
+   height: 10px;
+}
+
+.nav_ul {
+   width: 581.43px;
+   height: 10px;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+}
+
+.nav_li {
+   list-style: none;
+}
+
+.nav_a {
+   text-decoration: none;
+
+   font-family: 'Nunito Sans';
+   text-transform: uppercase;
+   font-size: 11px;
+   line-height: 15px;
+
+   color: #ffffff;
+}
+
+.nav_a:hover {
+   color: #E3B873;
+}
+
+/* /nav  */
+
+/* span_number */
+.span_number {
+   width: 126px;
+   height: 16px;
+}
+
+.a_number {
+   font-family: 'Nunito Sans';
+   text-transform: uppercase;
+   font-size: 11px;
+   line-height: 15px;
+
+   color: #E3B873;
+}
+
+.a_number:hover {
+   color: #ffffff;
+}
+
+/* /span_number */
+
+/* header_button */
+.header_button {
+   width: 161px;
+   height: 37px;
+
+   border-radius: 2px;
+   border: none;
+
+   background-color: #E3B873;
+   color: #ffffff;
+
+   font-family: 'Nunito Sans';
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 15px;
+   font-style: italic;
+}
+
+.header_button:hover {
+   background-color: rgba(227, 184, 115, 0.2);
+
+}
+
+/* .header_button:hover {
+   background-color: #ffffff;
+   color: #E3B873;
+   
+} */
+/* /header_button */
+
+/* ---------------------/HEADER---------------- */
+/* ---------------------MAIN---------------- */
+
+main {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+/* ------------------------------------------ */
+section {
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+/* --------------------W E L C O M E-------------- */
+.section_black {
+   background-color: #131313;
+}
+
+#container_welcome {
+   position: absolute;
+   z-index: 2;
+   /* background-color: #c4beb5; */
+
+   height: 305px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+}
+
+.welcome_img {
+   width: 1440px;
+   height: 707px;
+
+}
+
+/* ------ */
+.welcome_h1 {
+   font-size: 40px;
+   font-weight: 300;
+   line-height: 53.13px;
+   font-family: 'Yeseva One';
+   text-transform: uppercase;
+   color: #ffffff;
+
+   width: 580px;
+   height: 105px;
+
+   margin-left: 42px;
+
+}
+
+.welcome__h1_span {
+   color: #E3B873;
+}
+
+/* -------- */
+
+.welcome_p {
+   font-size: 21px;
+   font-weight: 400;
+   line-height: 33px;
+   font-family: 'Nunito Sans';
+   /* text-transform: uppercase; */
+   color: #ffffff;
+
+   width: 460px;
+   height: 89px;
+
+   margin-left: 42px;
+}
+
+.welcome_btn {
+   width: 438px;
+   height: 51px;
+
+   margin-left: 42px;
+
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.welcome__btn_one {
+   width: 207px;
+   height: 51px;
+
+   /* margin-right: 20px; */
+
+   background-color: #E3B873;
+   border-radius: 2px;
+   border: none;
+   color: #ffffff;
+
+   font-size: 11px;
+   line-height: 15px;
+   font-style: italic;
+   text-transform: uppercase;
+   font-family: 'Nunito Sans';
+
+}
+.welcome__btn_one:hover {
+   background-color: rgba(227, 184, 115, 0.2);
+}
+
+.welcome__btn_two {
+   width: 207px;
+   height: 51px;
+
+   background-color: rgba(255, 255, 255, 0);
+   border-radius: 2px;
+   border: solid #ffffff 1px;
+   color: #ffffff;
+
+
+   font-size: 11px;
+   line-height: 15px;
+   font-style: italic;
+   text-transform: uppercase;
+   font-family: 'Nunito Sans';
+}
+.welcome__btn_two:hover {
+   background-color: rgba(227, 184, 115, 0.2);
+}
+
+
+
+/* --------------------/W E L C O M E-------------- */
