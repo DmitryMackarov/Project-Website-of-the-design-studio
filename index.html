@@ -17,11 +17,11 @@
 
 <body>
    <header>
-      <div class="container">
+      <div class="container" id="container_header">
          <span class="header_span">
             IC "Repair Design Project"
          </span>
-         <nav>
+         <nav class="header_nav">
             <ul class="nav_ul">
                <li class="nav_li"><a class="nav_a" href="#">HOME</a></li>
                <li class="nav_li"><a class="nav_a" href="#">PROJECTS</a></li>
@@ -39,7 +39,7 @@
 
    <main>
 
-      <!-- <section class="section_welcome">
+      <section class="section_welcome">
          <img class="welcome_img" src="images/main/section_welcome/welcome_img.png" alt="welcome_img">
          <div class="container" id="container_welcome">
             <h1 class="welcome_h1">Turnkey Repair in the
@@ -52,16 +52,21 @@
                <button class="welcome__btn_two">SUBMIT YOUR APPLICATION</button>
             </div>
          </div>
-      </section> -->
+      </section>
 
 
-      <!-- <section class="section_CompletedProjects">
+      <section class="section_CompletedProjects">
          <div class="container" id="container_CompletedProjects">
             <div class="block_CompletedProjects">
                <h2 class="h2_CompletedProjects">Completed projects</h2>
                <p class="p_CompletedProjects">Only a small part of the work performed by our company is presented on the
                   site. For 14 years on in the construction <br>
                   market we have made happy more than 1000 families</p>
+               <div class="block_additional_little">
+                  <button class="button_left"></button>
+                  <button class="button_right"></button>
+
+               </div>
                <div class="info_CompletedProjects">
                   <div class="text_CompletedProjects">
                      <h3 class="h3_CompletedProjects">City:</h3>
@@ -98,10 +103,10 @@
             </div>
 
          </div>
-      </section> -->
+      </section>
 
 
-      <!-- <section class="section_OnlineControl">
+      <section class="section_OnlineControl">
          <div class="background_black"></div>
          <div class="container" id="container_OnlineControl">
             <div class="block_OnlineControl">
@@ -137,21 +142,27 @@
                   <input class="input_OnlineControl" type="tel" value="Your phone number:" name="userNamber"
                      pattern="#">
                </div>
+               <p class="p__OnlineControl_checkbox-one">
+                  <input class="checkbox_OnlineControl" type="checkbox" name="processing of personal data"
+                     value="подтвердить">I
+                  agree to the processing of personal data
+               </p>
                <button class="button_OnlineControl">
                   sumbit
                </button>
             </form>
 
-            <p class="p__OnlineControl_checkbox">
-               <input class="checkbox_OnlineControl" type="checkbox" name="processing of personal data" value="подтвердить">I
+            <p class="p__OnlineControl_checkbox-two">
+               <input class="checkbox_OnlineControl" type="checkbox" name="processing of personal data"
+                  value="подтвердить">I
                agree to the processing of personal data
             </p>
 
          </div>
-      </section> -->
+      </section>
 
 
-      <!-- <section class="section_TypesOfRepair">
+      <section class="section_TypesOfRepair">
          <div class="container" id="container_TypesOfRepair">
             <div class="block_TypesOfRepair">
                <h3 class="h3_TypesOfRepair">TYPES OF REPAIR</h3>
@@ -231,10 +242,66 @@
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
+
+      <section class="section_fantasies">
+         <div class="container" id="container_fantasies">
+            <span class="span_fantasies">
+               We realize your<br>
+               wildest fantasies
+            </span>
+            <div class="image__fantasies_one">
+               <button class="btn__fantasies_left"></button>
+               <button class="btn__fantasies_right"></button>
+            </div>
+            <form class="form_fantasies" action="#" method="get">
+               <legend class="legend_fantasies">have any questions?</legend>
+               <div class="block__label_fantasies">
+                  <div class="block__label_fantasies-one">
+                     <div class="Fantasies__label_name">
+                        <label>Name</label>
+                        <input class="input_Fantasies" type="text" value="What is your name:" name="userName">
+                     </div>
+                     <div class="Fantasies__label_phone">
+                        <label>Phone</label>
+                        <input class="input_Fantasies" type="tel" value="Your phone number:" name="userNamber"
+                           pattern="#">
+                     </div>
+                  </div>
+                  <div class="block__label_fantasies-two">
+                     <div class="Fantasies__label_question">
+                        <label>Question</label>
+                        <input class="input_Fantasies" type="text" value="I want to know:" name="userQuestion">
+                     </div>
+                  </div>
+               </div>
+               <p class="p__Fantasies_checkbox">
+                  <input class="checkbox_Fantasies" type="checkbox" name="processing of personal data"
+                     value="подтвердить"> I agree to the processing of personal data
+               </p>
+               <button class="Fantasies_btn">submit</button>
+            </form>
+            <div class="image__fantasies_map"></div>
+            <div class="block__Fantasies-adress">
+               <p class="p__Fantasies_adress">Rostov-on-Don, Nansen St., 239 Shopping Center
+                  Decorum<br> Tel +7 (928) 768 32 29</p>
+               <div class="block__Fantasies_link">
+                  <a class="a_Fantasies" href="#">
+                     <img class="img__Fantasies_a" src="images/main/section_OurClients/img__OurClients_a/img__a_one.png"
+                        alt="img__a_one">
+                  </a>
+                  <a class="a_Fantasies" href="#">
+                     <img class="img__Fantasies_a" src="images/main/section_OurClients/img__OurClients_a/img__a_two.png"
+                        alt="img__a_two.png">
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="block_Fantasies-fone"></div>
+      </section>
 
 
-      <!-- <section class="section_measuring">
+      <section class="section_measuring">
          <div class="container" id="container_measuring">
             <form class="form_request" action="#" method="get">
                <legend class="legend_request">Leave a request for free<br>
@@ -269,10 +336,10 @@
             <img class="img__measuring_one" src="images/main/section_measuring/img__measuring_one.png"
                alt="img__measuring_one">
          </div>
-      </section> -->
+      </section>
 
 
-      <!-- <section class="section_YourFantasies">
+      <section class="section_YourFantasies">
          <div class="img__section_YourFantasies">
             <img class="image__YourFantasies_one" src="images/main/section_YourFantasies/img_YourFantasies.png"
                alt="img_YourFantasies">
@@ -313,10 +380,10 @@
                </div>
             </div>
          </div>
-      </section> -->
+      </section>
 
 
-      <!-- <section class="section_OurClients">
+      <section class="section_OurClients">
          <div class="container" id="container_OurClients">
             <h3 class="h3_OurClients">our clients</h3>
             <div class="img_OurClients">
@@ -334,7 +401,7 @@
                         <h4 class="h4_OurClients">Fedosova Maria<br>
                            Konstantinovna</h4>
                      </div>
-                     <p class="p_OurClients">
+                     <p class="p__OurClients_text">
                         I want to thank the guys for their work. We put your shower part in repair. I am very grateful
                         that I referred to the repair as to my own. Great thanks I express the project
                         to Georgia for its professionalism and approach.
@@ -354,7 +421,7 @@
                            alt="img__client_two">
                         <h4 class="h4_OurClients">Afanasyev Sergey<br> Alexandrovich</h4>
                      </div>
-                     <p class="p_OurClients">
+                     <p class="p__OurClients_text">
                         I want to thank the guys for their work. We put your shower part in repair. I am very grateful
                         that I referred to the repair as to my own. Great thanks I express the project
                         to Georgia for its professionalism and approach.
@@ -375,7 +442,7 @@
                            alt="img__client_three">
                         <h4 class="h4_OurClients">Kiriev Egor<br> Leonidovich</h4>
                      </div>
-                     <p class="p_OurClients">
+                     <p class="p__OurClients_text">
                         I want to thank the guys for their work. We put your shower part in repair. I am very grateful
                         that I referred to the repair as to my own. Great thanks I express the project
                         to Georgia for its professionalism and approach.
@@ -447,12 +514,12 @@
          <div class="block__OurClients_map">
             <img class="img_map" src="images/main/section_OurClients/img_map/img_map.png" alt="img_map">
          </div>
-      </section> -->
+      </section>
 
    </main>
 
-   <!-- <footer>
-      <div class="container">
+   <footer>
+      <div class="container" id="container_footer">
          <span class="header_span">
             IC "Repair Design Project"
          </span>
@@ -470,7 +537,7 @@
          </span>
          <button class="header_button">Request a call</button>
       </div>
-   </footer> -->
+   </footer>
 
 </body>
 

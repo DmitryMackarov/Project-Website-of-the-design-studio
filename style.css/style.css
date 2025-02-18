@@ -40,18 +40,31 @@ header {
    background-color: #131313;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   header {
+      height: 57px;
+   }
+}
+
 /* ------------------DIV-container------------- */
 
 .container {
    width: 100%;
    max-width: 1256px;
-   /* height: 37px; */
+}
 
-   /* background-color: #3d3a3a; */
-
+#container_header {
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   #container_header {
+      width: 100%;
+      max-width: 375px;
+      padding: 0 18px 0 18px;
+   }
 }
 
 /* -----------------/DIV-container------------- */
@@ -74,6 +87,13 @@ header {
 nav {
    width: 581.43px;
    height: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .header_nav {
+      display: none;
+
+   }
 }
 
 .nav_ul {
@@ -148,6 +168,12 @@ nav {
    font-style: italic;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .header_button {
+      display: none;
+   }
+}
+
 .header_button:hover {
    background-color: rgba(227, 184, 115, 0.2);
 
@@ -194,11 +220,24 @@ main {
    align-items: start;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   #container_welcome {
+      height: 476px;
+      align-items: center;
+   }
+}
+
 .welcome_img {
    width: 100%;
    /* width: 1440px; */
    height: 707px;
 
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .welcome_img {
+      height: 476px;
+   }
 }
 
 /* ------ */
@@ -217,6 +256,19 @@ main {
 
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .welcome_h1 {
+      font-size: 23px;
+      font-weight: 300;
+      line-height: 30.55px;
+
+      width: 339px;
+      height: 60px;
+
+      margin: 85px 0 0 0;
+   }
+}
+
 .welcome__h1_span {
    color: #E3B873;
 }
@@ -228,19 +280,32 @@ main {
    font-weight: 400;
    line-height: 33px;
    font-family: 'Nunito Sans';
-   /* text-transform: uppercase; */
    color: #ffffff;
 
    width: 460px;
    height: 89px;
 
+   margin-top: 19px;
    margin-left: 42px;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .welcome_p {
+      font-size: 14px;
+      line-height: 19.02px;
+
+      width: 339px;
+      height: 94px;
+
+      margin: 16px 0 0 0;
+   }
 }
 
 .welcome_btn {
    width: 438px;
    height: 51px;
 
+   margin-top: 41px;
    margin-left: 42px;
 
    display: flex;
@@ -248,11 +313,20 @@ main {
 
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .welcome_btn {
+      width: 338.61px;
+      height: 128px;
+      margin: 0;
+
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
 .welcome__btn_one {
    width: 207px;
    height: 51px;
-
-   /* margin-right: 20px; */
 
    background-color: #E3B873;
    border-radius: 2px;
@@ -265,6 +339,13 @@ main {
    text-transform: uppercase;
    font-family: 'Nunito Sans';
 
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .welcome__btn_one {
+      width: 338.61px;
+      height: 51px;
+   }
 }
 
 .welcome__btn_one:hover {
@@ -288,6 +369,13 @@ main {
    font-family: 'Nunito Sans';
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .welcome__btn_two {
+      width: 338.61px;
+      height: 51px;
+   }
+}
+
 .welcome__btn_two:hover {
    background-color: rgba(227, 184, 115, 0.2);
 }
@@ -301,13 +389,19 @@ main {
 .section_CompletedProjects {
    width: 100%;
    /* height: 1074px; */
-   height: 750px;
+   height: 740px;
 
    background-color: #131313;
 
    display: flex;
    justify-content: center;
    /* align-items: center; */
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .section_CompletedProjects {
+      height: 669px;
+   }
 }
 
 #container_CompletedProjects {
@@ -323,6 +417,17 @@ main {
    justify-content: space-between;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   #container_CompletedProjects {
+      max-width: 375px;
+      height: 633px;
+
+      margin-top: 36px;
+
+      justify-content: center;
+   }
+}
+
 /* --------- */
 .block_CompletedProjects {
    width: 100%;
@@ -332,6 +437,20 @@ main {
    margin-top: 69.36px;
 
    /* background-color: #e3b87317; */
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .block_CompletedProjects {
+      width: 100%;
+      max-width: 340px;
+      height: 633px;
+
+      margin-top: 0px;
+
+      Display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
 }
 
 .h2_CompletedProjects {
@@ -346,6 +465,15 @@ main {
    font-family: 'Yeseva One';
 
    color: #E3B873;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .h2_CompletedProjects {
+      font-size: 22px;
+      line-height: 30.49px;
+
+      text-align: center;
+   }
 }
 
 .p_CompletedProjects {
@@ -363,6 +491,66 @@ main {
    color: #ffffff;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .p_CompletedProjects {
+      max-width: 311px;
+
+      font-size: 11px;
+      line-height: 17.43px;
+
+      margin-top: 22px;
+      text-align: center;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .block_additional_little {
+      width: 100%;
+      max-width: 340px;
+      height: 241.55px;
+
+      background: url('/images/main/section_CompletedProjects/img__additional_little.png') 0 0 / cover no-repeat;
+
+      margin-top: 36px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .button_left {
+      width: 100%;
+      max-width: 36px;
+      height: 36px;
+
+      margin-left: 14px;
+      background: url('/images/main/section_CompletedProjects/img__button_left.png') 0 0 / cover no-repeat;
+      border: none;
+
+   }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .button_right {
+      width: 100%;
+      max-width: 36px;
+      height: 36px;
+
+      margin-right: 14px;
+      background: url('/images/main/section_CompletedProjects/img__button_right.png') 0 0 / cover no-repeat;
+      border: none;
+
+   }
+}
+
+@media (max-width: 319px) and (min-width: 431px) {
+   .block_additional_little {
+      display: none;
+   }
+}
+
 .info_CompletedProjects {
    width: 100%;
    max-width: 403px;
@@ -378,6 +566,23 @@ main {
    margin-top: 42px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .info_CompletedProjects {
+      width: 100%;
+      max-width: 341px;
+      height: 145px;
+
+      display: grid;
+      grid-template-columns: 129px 181px;
+      grid-template-rows: 68px 50px;
+
+      row-gap: 27px;
+      column-gap: 31px;
+
+      margin-top: 36.45px;
+   }
+}
+
 .text_CompletedProjects {
    font-size: 13px;
    line-height: 21.28px;
@@ -385,6 +590,13 @@ main {
    font-family: 'Nunito Sans';
 
    color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .text_CompletedProjects {
+      font-size: 11px;
+      line-height: 14.94px;
+   }
 }
 
 .h3_CompletedProjects {
@@ -399,8 +611,25 @@ main {
    color: #E3B873;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .h3_CompletedProjects {
+      font-size: 14px;
+      line-height: 19.4px;
+
+      margin-bottom: 13px;
+
+      color: #E3B873;
+   }
+}
+
 .img__CompletedProjects_slide {
    margin-top: 79.64px;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .img__CompletedProjects_slide {
+      display: none;
+   }
 }
 
 /* ------ */
@@ -411,6 +640,12 @@ main {
    height: 552.28px;
 
    /* background-color: #e3b87317; */
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .image_CompletedProjects {
+      display: none;
+   }
 }
 
 .ul_CompletedProjects {
@@ -427,6 +662,7 @@ main {
 .li_CompletedProjects {
    list-style: none;
 }
+
 .a_CompletedProjects {
    font-weight: 400;
    font-size: 14px;
@@ -467,15 +703,22 @@ main {
 
 .background_black {
    width: 100%;
-   height: 324px;
+   height: 325px;
    background-color: #131313;
    position: absolute;
    z-index: -1;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .background_black {
+      height: 878.51px;
+   }
+}
+
 #container_OnlineControl {
+   display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: center;
 
 }
 
@@ -491,6 +734,16 @@ main {
    align-items: center;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block_OnlineControl {
+      width: 100%;
+      max-width: 224px;
+      height: 73.79px;
+
+      margin-top: 58px;
+   }
+}
+
 .h3_OnlineControl {
    font-weight: 400;
    font-size: 20px;
@@ -499,6 +752,13 @@ main {
    font-family: 'Yeseva One';
 
    color: #ffffff;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .h3_OnlineControl {
+      font-size: 22px;
+      line-height: 30.49px;
+   }
 }
 
 .image__OnlineControl_one {
@@ -529,9 +789,29 @@ main {
    align-items: center;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .image__OnlineControl_two {
+      width: 100%;
+      max-width: 340px;
+      height: 207px;
+      margin-top: 31.21px;
+
+   }
+}
+
 .img__OnlaneControl_three {
    position: absolute;
    z-index: 2;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .img__OnlaneControl_three {
+
+      width: 55px;
+      height: 55px;
+
+
+   }
 }
 
 .img__OnlaneControl_two {
@@ -540,6 +820,16 @@ main {
    height: 434px;
 
 
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .img__OnlaneControl_two {
+
+      width: 340px;
+      height: 207px;
+
+
+   }
 }
 
 /* ----- */
@@ -552,10 +842,16 @@ main {
    margin: 62.5px 0 0 0;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .line_OnlineControl {
+      margin: 28px 0 0 0;
+   }
+}
+
 .p_OnlineControl {
    width: 100%;
    max-width: 681px;
-   height: 130.91;
+   height: 130.91px;
 
    font-size: 18px;
    line-height: 36.83px;
@@ -569,6 +865,21 @@ main {
    color: #363636;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .p_OnlineControl {
+      max-width: 340px;
+      height: 106.95px;
+
+      font-size: 11px;
+      line-height: 18.68px;
+
+      margin-top: 21.46px;
+      padding: 0 5px;
+      color: #FFFFFF;
+      ;
+   }
+}
+
 /* ------ */
 .form__OnlineControl_one {
    width: 100%;
@@ -579,6 +890,22 @@ main {
 
    display: flex;
    justify-content: space-between;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .form__OnlineControl_one {
+      width: 100%;
+      max-width: 340px;
+      height: 311px;
+
+      margin-top: 61.05px;
+
+      display: flex;
+      flex-direction: column;
+
+
+      justify-content: flex-start;
+   }
 }
 
 .input_OnlineControl {
@@ -595,6 +922,12 @@ main {
    font-family: 'Nunito Sans';
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .input_OnlineControl {
+      color: #FFFFFF;
+   }
+}
+
 .block__label_name-OnlineControl {
    width: 100%;
    max-width: 231px;
@@ -608,6 +941,15 @@ main {
 
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block__label_name-OnlineControl {
+      width: 100%;
+      max-width: 340px;
+      height: 45px;
+      border-bottom: 1px solid #FFFFFF;
+   }
+}
+
 .block__label_phone-OnlineControl {
    width: 100%;
    max-width: 231px;
@@ -619,6 +961,18 @@ main {
 
    border-bottom: 1px solid #3636364D;
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .block__label_phone-OnlineControl {
+      width: 100%;
+      max-width: 340px;
+      height: 45px;
+
+      margin-top: 63px;
+      border-bottom: 1px solid #FFFFFF;
+   }
+}
+
 .label_OnlineControl {
    height: 12px;
    color: #36363680;
@@ -626,8 +980,15 @@ main {
    line-height: 21.28px;
    font-family: 'Nunito Sans';
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .label_OnlineControl {
+      color: #FFFFFF80;
+   }
+}
+
 /* ----- */
-.p__OnlineControl_checkbox {
+.p__OnlineControl_checkbox-two {
    width: 100%;
    max-width: 408px;
    height: 18px;
@@ -638,6 +999,26 @@ main {
    line-height: 22.92px;
    font-family: 'Nunito Sans';
    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .p__OnlineControl_checkbox-one {
+      margin-top: 26.54px;
+      color: #FFFFFF;
+   }
+}
+
+@media (min-width: 0px) and (max-width: 319px),
+(min-width: 431px) and (max-width: 9999999px) {
+   .p__OnlineControl_checkbox-one {
+      display: none;
+   }
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .p__OnlineControl_checkbox-two {
+      display: none;
+   }
 }
 
 .checkbox_OnlineControl {
@@ -671,6 +1052,15 @@ main {
    font-family: 'Nunito Sans';
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .button_OnlineControl {
+      width: 340px;
+      height: 51px;
+
+      margin-top: 62.43px;
+   }
+}
+
 .button_OnlineControl:hover {
    background-color: rgba(227, 184, 115, 0.788);
 }
@@ -701,8 +1091,10 @@ main {
 }
 
 #container_TypesOfRepair {
+   display: flex;
    flex-direction: column;
-   justify-content: center;
+
+   align-items: center;
 }
 
 /* ---------- */
@@ -719,6 +1111,15 @@ main {
    margin-top: 147.85px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block_TypesOfRepair {
+      max-width: 257px;
+      height: 71px;
+
+      margin-top: 58px;
+   }
+}
+
 .h3_TypesOfRepair {
    font-weight: 400;
    font-size: 20px;
@@ -729,12 +1130,20 @@ main {
    color: #181818;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .h3_TypesOfRepair {
+      font-size: 22px;
+      line-height: 30.49px;
+   }
+}
+
 .image__TypesOfRepair_one {
    display: flex;
    align-items: center;
    width: 100%;
    max-width: 114px;
 }
+
 
 .img__TypesOfRepair_one {
    margin: 0 13px 0 9px;
@@ -761,6 +1170,18 @@ main {
    justify-content: space-between;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block_finishing {
+      width: 100%;
+      max-width: 340px;
+      height: 1570px;
+      margin-top: 40px;
+
+      display: flex;
+      flex-direction: column;
+   }
+}
+
 /* ------    --------- */
 
 /* -------  block__finishing_one  ----------*/
@@ -772,6 +1193,14 @@ main {
    position: relative;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block__finishing_one {
+      width: 100%;
+      max-width: 340px;
+      height: 484px;
+      position: relative;
+   }
+}
 
 .price__TypesOfRepair_one {
    width: 100%;
@@ -792,6 +1221,20 @@ main {
    z-index: 3;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .price__TypesOfRepair_one {
+      width: 100%;
+      max-width: 190.43px;
+      height: 40px;
+      padding: 11.36px 19.21px;
+      margin-top: -21px;
+      margin-left: 0px;
+
+      font-size: 15px;
+      line-height: 20.79px;
+   }
+}
+
 .image__TypesOfRepair_two,
 .img__TypesOfRepair_two {
    width: 100%;
@@ -799,6 +1242,17 @@ main {
    height: 421px;
    position: relative;
    z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+   .image__TypesOfRepair_two,
+   .img__TypesOfRepair_two {
+      width: 100%;
+      max-width: 340px;
+      height: 365.15px;
+
+   }
 }
 
 /* ---- block__finishing_two ----- */
@@ -810,6 +1264,14 @@ main {
 
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block__finishing_two {
+      width: 100%;
+      max-width: 340px;
+      height: 484px;
+   }
+}
+
 .image__TypesOfRepair_tree,
 .img__TypesOfRepair_tree {
    width: 100%;
@@ -817,6 +1279,17 @@ main {
    height: 421px;
    position: relative;
    z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+   .image__TypesOfRepair_tree,
+   .img__TypesOfRepair_tree {
+      width: 100%;
+      max-width: 340px;
+      height: 365.15px;
+
+   }
 }
 
 .price__TypesOfRepair_two {
@@ -836,6 +1309,20 @@ main {
 
    position: relative;
    z-index: 3;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .price__TypesOfRepair_two {
+      width: 100%;
+      max-width: 190.43px;
+      height: 40px;
+      padding: 11.79px 16.21px;
+      margin-top: -21px;
+      margin-left: 0px;
+
+      font-size: 15px;
+      line-height: 20.79px;
+   }
 }
 
 
@@ -863,6 +1350,22 @@ main {
 
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block__TypesOfRepair_redecorating {
+      width: 100%;
+      max-width: 270px;
+      height: 241px;
+      padding: 21px 41px 0 31px;
+
+      margin-top: -142px;
+      margin-left: 0px;
+
+      font-size: 15px;
+      line-height: 20.79px;
+      font-family: 'Yeseva One';
+   }
+}
+
 .ul_TypesOfRepair {
    width: 100%;
    padding-left: 0px;
@@ -875,6 +1378,18 @@ main {
    color: #959595;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .ul_TypesOfRepair {
+      width: 100%;
+      padding-left: 0px;
+      margin-top: 13px;
+      margin-left: 15px;
+
+      font-size: 13px;
+      line-height: 22.07px;
+   }
+}
+
 
 
 /* --- block__finishing_tree---- */
@@ -884,11 +1399,30 @@ main {
    height: 608px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .block__finishing_tree {
+      width: 100%;
+      max-width: 340px;
+      height: 484px;
+   }
+}
+
 .image__TypesOfRepair_four,
 .img__TypesOfRepair_four {
    width: 100%;
    max-width: 392px;
    height: 421px;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+
+   .image__TypesOfRepair_four,
+   .img__TypesOfRepair_four {
+      width: 100%;
+      max-width: 340px;
+      height: 365.15px;
+
+   }
 }
 
 .price__TypesOfRepair_tree {
@@ -910,10 +1444,319 @@ main {
    z-index: 3;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .price__TypesOfRepair_tree {
+      width: 100%;
+      max-width: 190.43px;
+      height: 40px;
+      padding: 11.16px 14.71px;
+      margin-top: -21px;
+      margin-left: 0px;
+
+      font-size: 15px;
+      line-height: 20.79px;
+   }
+}
+
 /* ------- */
 /* ------ */
 
 /* ----------------/Finishing-------------- */
+/* ---------------SECTION_FANTASIES-------- */
+@media (min-width: 0px) and (max-width: 319px),
+(min-width: 431px) and (max-width: 9999999px) {
+   .section_fantasies {
+      display: none;
+   }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+   .section_fantasies {
+      width: 100%;
+      height: 1461px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   #container_fantasies {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin-top: 55px;
+   }
+
+   .span_fantasies {
+      width: 100%;
+      max-width: 340px;
+      height: 66px;
+
+      text-align: center;
+
+      color: rgba(227, 184, 115, 1);
+      font-size: 22px;
+      line-height: 30.49px;
+      text-transform: uppercase;
+      font-family: 'Yeseva One';
+   }
+
+   .image__fantasies_one {
+      width: 100%;
+      max-width: 340px;
+      height: 242px;
+
+      margin-top: 24px;
+
+      background: url('/images/main/section_fantasies/img__fantasies_one.png') 0 0 / cover no-repeat;
+
+      margin-top: 24px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+
+   
+      .btn__fantasies_left {
+         width: 100%;
+         max-width: 36px;
+         height: 36px;
+
+         margin-left: 14px;
+         background: url('/images/main/section_fantasies/img__button_left.png') 0 0 / cover no-repeat;
+         border: none;
+
+      }
+   
+
+  
+      .btn__fantasies_right {
+         width: 100%;
+         max-width: 36px;
+         height: 36px;
+
+         margin-right: 14px;
+         background: url('/images/main/section_fantasies/img__button_right.png') 0 0 / cover no-repeat;
+         border: none;
+
+      }
+
+      .form_fantasies {
+         width: 100%;
+         max-width: 340px;
+         height: 497px;
+      
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      
+      
+         margin-top: 52px;
+         background-color: rgba(24, 24, 24, 1);
+      }
+      
+      .legend_fantasies {
+         width: 100%;
+         max-width: 257px;
+         height: 26px;
+      
+         
+         text-align: center;
+      
+         color: rgba(255, 255, 255, 1);
+         font-size: 20px;
+         line-height: 27.72px;
+         text-transform: uppercase;
+         font-family: 'Yeseva One';
+      }
+      
+      .block__label_fantasies {
+         width: 100%;
+         max-width: 340px;
+         height: 261.04px;
+      
+         margin-top: 52px;
+      
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+      
+      .block__label_fantasies-one {
+         width: 100%;
+         max-width: 340px;
+         height: 153.04px;
+      
+         display: flex;
+         flex-direction: column;
+
+         justify-content: space-between;
+      }
+      
+      .Fantasies__label_name {
+         width: 100%;
+         max-width: 340px;
+         height: 45px;
+      
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      
+         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      
+      .Fantasies__label_phone {
+         width: 100%;
+         max-width: 340px;
+         height: 45px;
+      
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      
+         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      
+      .block__label_fantasies-two {
+         width: 100%;
+         max-width: 340px;
+         height: 45px;
+      }
+      
+      .Fantasies__label_question {
+         width: 100%;
+         max-width: 340px;
+         height: 45px;
+      
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      
+         border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      }
+      
+      .input_Fantasies {
+         height: 25px;
+         background-color: #13131300;
+         border: none;
+      
+         color: #ffffff;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 22.92px;
+         font-family: 'Nunito Sans';
+      }
+      
+      .p__Fantasies_checkbox {
+         width: 100%;
+         max-width: 340px;
+         height: 18px;
+         margin-top: 21.63px;
+      
+         color: #ffffff;
+         font-size: 14px;
+         line-height: 22.92px;
+         font-family: 'Nunito Sans';
+         text-justify: start;
+         
+      }
+      
+      .checkbox_Fantasies {
+         margin: 0;
+         width: 18px;
+         height: 18px;
+      
+         margin-right: 8.62px;
+         accent-color: rgba(227, 184, 115, 1);
+         border-radius: 1px;
+      
+      }
+      
+      .Fantasies_btn {
+         width: 340px;
+         height: 51px;
+      
+         margin-top: 67.33px;
+      
+         border-radius: 0;
+         border: none;
+      
+         background-color: #E3B873;
+         color: #ffffff;
+         font-size: 13px;
+         line-height: 26.6px;
+         text-transform: uppercase;
+         font-family: 'Nunito Sans';
+      }
+
+      .image__fantasies_map {
+         width: 100%;
+         max-width: 340px;
+         height: 255px;
+
+         margin-top: 46px;
+         background: url('/images/main/section_fantasies/img__fantasies_map.png') 0 0 / cover no-repeat;
+      }
+      .block__Fantasies-adress {
+         width: 100%;
+         max-width: 340px;
+         height: 133.21px;
+         margin-top: 41.79px;
+      
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+      
+      .p__Fantasies_adress {
+         width: 100%;
+         max-width: 340px;
+         height: 70.56px;
+         text-align: center;
+      
+         color: rgba(227, 184, 115, 1);
+         font-size: 18px;
+         line-height: 24.95px;
+         text-transform: uppercase;
+         font-family: 'Yeseva One';
+      }
+      
+      .block__Fantasies_link {
+         width: 100%;
+         max-width: 98.89px;
+         height: 39px;
+      
+         margin-top: 23.65px;
+         display: flex;
+         justify-content: space-between;
+      }
+      
+      .a_Fantasies {
+         width: 39px;
+         height: 39px;
+      }
+
+      .img__Fantasies_a {
+         width: 39px;
+         height: 39px;
+      }
+
+      .block_Fantasies-fone {
+         width: 100%;
+         height: 1195px;
+         margin-top: 266px;
+
+         background-color: rgba(24, 24, 24, 1);
+
+         position: absolute;
+         z-index: -1;
+      }
+   
+}
+
+/* --------------/SECTION_FANTASIES-------- */
 
 /* -------------SECTION_MEASURING-------- */
 .section_measuring {
@@ -925,6 +1768,13 @@ main {
    display: flex;
    justify-content: center;
 
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .section_measuring {
+      display: none;
+
+   }
 }
 
 #container_measuring {
@@ -1084,6 +1934,8 @@ label {
    width: 100%;
    max-width: 506px;
    height: 72px;
+
+   margin-top: 38.44px;
 }
 
 .img__measuring_two {
@@ -1121,6 +1973,13 @@ label {
 
    display: flex;
    justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+   .section_YourFantasies {
+      display: none;
+
+   }
 }
 
 /* -------- */
@@ -1251,6 +2110,13 @@ label {
    align-items: center;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+   .section_OurClients {
+      display: none;
+
+   }
+}
+
 #container_OurClients {
    width: 100%;
    max-width: 1236px;
@@ -1258,6 +2124,7 @@ label {
 
    display: flex;
    flex-direction: column;
+   align-items: center;
 
    /* background-color:rgba(227, 184, 115, 0.514); */
 }
@@ -1365,7 +2232,7 @@ label {
    font-family: 'Yeseva One';
 }
 
-.p_OurClients {
+.p__OurClients_text {
    width: 100%;
    max-width: 324.08px;
    height: 216px;
@@ -1558,12 +2425,13 @@ label {
    text-transform: uppercase;
    font-family: 'Yeseva One';
 }
+
 .block__OurClients_link {
    width: 100%;
    max-width: 71px;
    height: 28px;
 
-   margin-top:26px;
+   margin-top: 26px;
    display: flex;
    justify-content: space-between;
 }
@@ -1578,7 +2446,7 @@ label {
 
 /* ---Block__OurClients_map--- */
 .block__OurClients_map {
-   width :100%;
+   width: 100%;
    max-width: 925px;
    height: 465px;
 
@@ -1638,6 +2506,21 @@ footer {
    display: flex;
    justify-content: center;
 
+
    background-color: #181818;
 }
+
+@media (min-width: 320px) and (max-width: 430px) {
+   footer {
+      display: none;
+
+   }
+}
+
+#container_footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
 /* --------------/FOOTER--------- */
